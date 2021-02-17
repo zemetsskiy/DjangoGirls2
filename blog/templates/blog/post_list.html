@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Zemetsskiy blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Блог Максима Земецкого</a></h1>
+        </div>
+
+        {% for post in posts %}
+            <div>
+                <h1>{{ post.title }}</h1>
+                <p>{{ post.text }}</p>
+                <p>{{ post.created_date }}</p>
+            </div>
+            <hr>
+        {% endfor %}
+    </body>
+</html>
